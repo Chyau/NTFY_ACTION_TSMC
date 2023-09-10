@@ -12,5 +12,5 @@ def scrape_tsmc_stock_price():
 if __name__ == "__main__":
     stock_price = scrape_tsmc_stock_price()
     message = f"台積電股價：{stock_price}"
-    requests.post("https://ntfy.sh/",
+    requests.post("https://ntfy.sh/notifications_made_easy",
     data=message.encode(encoding='utf-8'))
